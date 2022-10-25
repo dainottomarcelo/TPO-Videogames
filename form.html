@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Satisfy&family=Ubuntu:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>GX - Contacto</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="Retro.html">Retro</a>
+            <a href="form.html">Contáctanos</a>
+
+        </div>
+        <div class="contenido">
+            <div><img src="img/genx.png" alt="Logo"></div>
+            <div>
+                <fieldset>
+                    <legend><b>Ingresa tus datos para contactarnos</b></legend>
+                    <form name="Contacto">
+                        <br>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre... ">
+                        <br><br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" placeholder="Apellido... ">
+                        <br><br>
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" placeholder="Ingresa tus años... ">
+                        <br><br>
+                        <label for="user-email">Email:</label>
+                        <input type="email" id="user-email" name="userEmail" placeholder="ejemplo@mail.com ">
+                        <br> <br>
+                        <label for="fecnac">Fecha de nacimiento</label>
+                        <input type="date">
+                        <br><br>
+                        <label for="Origen" name="origen">Cómo nos conociste?</label>
+                        <select size="1">
+                            <option value="1">Seleccione...</option>
+                            <option value="2">Buscador Web</option>
+                            <option value="3">Redes Sociales</option>
+                            <option value="4">Youtube</option>
+                        </select>
+
+                        <br>
+                        <br>
+                        <label for="conocimientos">Plataforma que prefieres</label>
+                        <input type="checkbox" name="op" id="1">Xbox
+                        <input type="checkbox" name="op" id="1">PlayStation
+                        <input type="checkbox" name="op" id="1">PC
+                        <input type="checkbox" name="op" id="1">Android/Portatil
+                        <input type="checkbox" name="op" id="1">Otra
+                        <br>
+                        <br>
+                        <label for="comentarios">Deja aquí tu comentario, sugerencia o pedido:</label><br>
+                        <textarea cols="50" rows="10" placeholder="Contáctanos ahora!!!"></textarea>
+                        <br><br><br>
+                        <input type="submit" class="boton_personalizado" value="Enviar" onclick="validarEnviar()"">
+                        <input type="reset" class="boton_personalizado" value="Borrar">
+                </fieldset>
+            </div>
+
+            </form>
+
+        </div>
+        <div class="contenido2">
+            <div class="container2">
+                <h1 class="display-4 mt-3">Nuestra comunidad</h1>
+                <button class="boton_personalizado" id="myBtn">Participantes</button>
+            </div>
+            <br>
+            <div id="output"></div>
+        </div>
+
+        <footer class="pie">
+
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/Logos/fa.png" ></a>
+            <a href="https://www.Instagram.com/" target="_blank"><img src="img/Logos/ins.png"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="img/Logos/you.png"></a>
+            <a href="https://www.Twitch.com/" target="_blank"><img src="img/Logos/twi.png"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="img/Logos/li.png"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="img/Logos/twe.png"></a>
+        </footer>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>/Icons made by <a
+                href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    
+
+</body>
+
+</html>

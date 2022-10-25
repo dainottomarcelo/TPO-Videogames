@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-image: url(../img/back4.jpg);
+    background-size: 50%;
+    color: #000;
+    font-family: 'Ubuntu', sans-serif;
+    background-repeat: repeat;
+    height: 100%;
+}
+
+
+img {
+    max-width: 100%;
+    margin: auto;
+
+}
+
+
+
+
+
+.entrada-blog a {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    grid-area: blog;
+    text-align: justify;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    /*ancho máximo de la página*/
+    margin: 30px auto;
+    /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3 1fr) grid-template-areas: navbar;
+
+
+
+
+
+}
+
+.contenido {
+    background-color: #979797;
+    text-align: justify;
+    border: 3px solid;
+    border-color: #ff6d09; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+   
+}
+
+.contenido2 {
+    background-color: #979797;
+    text-align: justify;
+    border: 3px solid;
+    border-color: #ff6d09; 
+}
+
+
+
+
+@media (min-width: 400px) {
+    .contenedor {
+        width: 80%;
+        ;
+    }
+}
+
+@media (min-width:768px) {
+    .contenedor {
+        width: 90%;
+        ;
+    }
+}
+
+.contenedor>div,
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .navbar ,
+.contenedor .pie,
+.pie {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.navbar {
+
+    background-color: #333;
+    top: auto;
+    border: 3px solid;
+    border-color: #ff6d09;   
+
+
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.navbar img {
+    float: right;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    text-align:start;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ffffff;
+    color: #ff6d09;
+  }
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    height: 90%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+
+
+
+}
+
+.imagen {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.pie {
+
+    background-color: #333;
+    top: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    border: 3px solid;
+    border-color: #ff6d09;   
+
+
+
+}
+
+.pie img{max-height: 32px;}
+
+/* Links inside the navbar */
+.pie a {
+    
+    max-width: 100%;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    
+
+}
+
+/* Change background on mouse-over */
+.pie a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.boton_personalizado, button{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #333;
+    border-radius: 6px;
+    border: 2px solid #ff6d09;
+  }
+  .boton_personalizado:hover{
+    color: #ff6d09;
+    background-color: #ffffff;
+  }

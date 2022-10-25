@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/back4.jpg);
+    color: #000;
+    font-family:'Ubuntu', sans-serif;
+    background-repeat: repeat;
+    height: 100%;
+    background-size: 50%;
+    
+}
+img {
+    max-width: 100%;
+        
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 1200px; /*ancho máximo de la página*/
+    margin: 30px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+
+    /*3 columnas: contenido (con 2 widgets) + sidebar*/
+    grid-template-columns: repeat(3,1fr);
+
+    /*4 filas: header, contenido, widgets, footer*/
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "navbar navbar navbar "
+                         "encabezado encabezado encabezado "
+                         "contenido contenido  sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "pie pie  pie";
+}
+
+.contenedor > div,
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .pie {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contenedor .encabezado{
+    background: darkblue;
+    color: #fff;
+    grid-area: encabezado; 
+}
+
+.contenedor .contenido {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:start;
+    grid-area: contenido; 
+    background-color: #979797;
+  
+}
+.contenedor .widget-1 {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:start;
+    grid-area: contenido; 
+    background-color: #979797;
+ 
+}
+.contenedor .widget-2 {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:start;
+    grid-area: contenido; 
+    background-color: #979797;
+   
+}
+
+.contenedor .sidebar{
+    background: #979797;
+    
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    flex-direction:column;
+    max-width: 100%;
+    align-content: center;
+    text-align:justify;
+    grid-area: sidebar; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+   
+}
+.imgs {max-width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+    text-align:center;
+    justify-content: center;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2{
+    background-color: #979797;
+    color: #000000;
+    height: 400px;
+    filter: grayscale(100%);
+    border: 3px solid;
+    border-color: #ff6d09;   
+   
+    
+    /*utilizamos flexbox para alinear el contenido*/
+    
+    transition: all 0.25s;
+}
+.contenedor .widget-1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 22px 26px rgba(0, 0, 0, 0.2);
+    filter: grayscale(0%);
+}
+.contenedor .widget-2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 22px 26px rgba(0, 0, 0, 0.2);
+    filter: grayscale(0%);
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1; 
+}
+
+.contenedor .widget-2{
+    grid-area: widget-2; 
+}
+
+
+.contenedor .pie{
+        color: #fff;
+    background-color: #333;
+    top: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-shrink: initial;
+    grid-area: pie; 
+    border: 3px solid;
+    border-color: #ff6d09; 
+    
+
+}
+/* Links inside the navbar */
+.pie a {
+    
+    max-width: 100%;
+    color: #f2f2f2;
+    padding: 14px 16px;
+  
+}
+
+.pie img{max-height: 32px;}
+
+/* Change background on mouse-over */
+.pie a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.contenedor .navbar{
+    
+  background-color: #333;
+  top: auto;
+    grid-area: navbar; 
+    border: 3px solid;
+    border-color: #ff6d09;   
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar img {
+    float: right;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    text-align:start;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ffffff;
+    color: #ff6d09;
+  }
+.card{
+    max-width: 100%;
+    margin: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    background:rgb(234, 230, 240);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:start;
+    border: 3px solid;
+    border-color: #ff6d09;   
+      
+}
+.centrar{
+    margin:auto;
+    display:block;
+}
+
+.imagen{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align:start;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 22px 26px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s;
+}
+
+.sidebar:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 22px 26px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s;
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas: "navbar navbar navbar"
+                            "encabezado encabezado encabezado"
+                             "contenido contenido contenido"
+                             "sidebar sidebar sidebar"
+                             "widget-1 widget-1 widget-2"
+                             "pie pie pie";
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contenedor{
+        grid-template-areas: "navbar navbar navbar"
+                            "encabezado encabezado encabezado"
+                             "contenido contenido contenido"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "sidebar sidebar sidebar"
+                             "pie pie pie";
+    }
+}
