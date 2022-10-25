@@ -1,0 +1,103 @@
+html {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    body{
+        
+        background: rgb(154, 165, 167);
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        background-repeat: repeat;
+        height: 100%;
+        
+            
+    }
+
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p,li,label {
+    font-size: 2rem;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1100px; /*ancho máximo de la página*/
+    margin: 20px auto; /*ancho máximo de la página*/
+    justify-content: center;
+    text-align: justify;
+    
+}
+
+@media (min-width: 400px) {
+    .contenedor {width: 90%;
+        ;
+    }
+}
+
+@media (min-width:768px) {
+    .contenedor {width: 90%;
+        ;
+    }
+}
+
+.navbar{
+    
+    background-color: #333;
+    top: auto;
+        
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change background on mouse-over */
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    .video-responsive {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        position: relative;
+        }
+    .video-responsive iframe, .video-responsive object, .video-responsive embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        }
